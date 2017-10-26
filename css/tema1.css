@@ -1,0 +1,65 @@
+
+
+/* REGRAS DO TEMPLATE */
+
+.bg-gray{background: #f6f6f6;}
+.bg-blue{background: #283443; color: #fff;}
+.bg-aqua{background: aqua; color: #283443}
+.btn{ padding:5px 25px; background: aqua; color: #283443; border:1px solid aqua; border-radius: 0px; text-decoration: none; text-transform: lowercase; display: inline-block;}
+.btn:hover{ background: #283443; color: aqua; transition: 0.5s all;}
+.box{}
+
+ul.menu li a{ 
+	color:aqua;
+	border-radius: 0px;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding:5px 15px;
+	transition: 0.5s all;
+}
+
+ul.menu li a:hover{ color: #283443; background: aqua;}
+
+div#page{}
+
+div#page div#header{}
+div#page div#header h3{ margin: 5px}
+div#page div#main #services h1{max-height: 26px;}
+
+div#page div#header .row{ min-height: 20px; }
+
+div#page div#header div#logo{}
+div#page div#header div#logo h1{}
+div#page div#header div#logo h1 a{color: #283443; text-transform: uppercase; text-decoration: none; font-size: 25px; letter-spacing: -1px;}
+
+div#page div#header div#contacts{}
+div#page div#header div#contacts h3{ color: #283443; text-transform: uppercase;}
+div#page div#header div#contacts p{ color: #969696;}
+
+div#page div#header div#menu{}
+div#page div#header div#banner{ min-height: 100%;}
+#contacts h3{min-height: 45px;}
+
+@media screen and (max-width: 1000px){
+	div#page div#main #services h1 {margin-bottom: 50px;}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

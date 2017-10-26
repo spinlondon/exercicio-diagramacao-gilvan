@@ -1,0 +1,143 @@
+@import url('http://yui.yahooapis.com/3.5.0/build/cssreset/cssreset-min.css');
+@import url('http://yui.yahooapis.com/3.5.0/build/cssbase/cssbase-min.css'); 
+
+/* REGRAS GLOBAIS */
+
+html, body{font-family: 'Quicksand', sans-serif;}
+
+div{}
+
+ul{ list-style: square;}
+
+ul li{}
+
+h1{
+	color:#283443;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+a{
+	color:aqua;
+	text-decoration: underline;
+	text-transform: capitalize;
+}
+a:hover{
+	color:#283443;
+	text-decoration: none;
+}
+
+p{}
+
+/* CLASSES PERSONALIZADAS */
+.tleft{text-align:left;}
+.tright{text-align:right;}
+.tcenter{text-align:center;}
+.tjustify{text-align:justify;}
+
+.container{  width: 980px; margin: 0 auto; }
+.row{ padding: 15px 0;}
+
+.fleft{ float: left;}
+.fright{ float: right;}
+.clear{ clear: both; }
+
+.w100{ width: 100%;}
+
+.w40{ width: 40%;}
+.w60{ width: 60%;}
+
+.w30{ width: 30%;}
+.w70{ width: 70%;}
+
+.w50{ width: 50%;}
+
+.w33{ width: 33.3%;}
+
+.w25{ width: 25%;}
+
+.w20{ width: 20%;}
+
+
+/* REGRAS DO TEMPLATE */
+
+
+
+/* div#page div#header div{ display: inline-block;} NÃO FUNCIONA NO IE7 */
+
+div#page div#main{}
+div#page div#main img{ border: 3px solid aqua; transition: 0.5s all;}
+div#page div#main img:hover{ border: 3px solid #000; filter: blur(50)}
+
+div#page div#main .row#call-mkt{
+	padding:50px 0;
+}
+div#page div#main .row#call-mkt h1{ color:#283443;}
+div#page div#main .row#call-mkt .box{
+	padding: 0px 50px 25px;
+}
+div#page div#footer{}
+div#page div#footer h1{ color:aqua; }
+div#page div#footer a:hover{ color:aqua; text-decoration: none;}
+
+
+/* ESTRUTURAS PERSONALIZADAS */
+h1.logo-a{ margin: 0; padding: 0 }
+
+h1.logo-a a{ 
+	display: block;
+	width: 100px; /*Largura*/
+	height: 50px; /*Altura*/
+	background: url(../images/logo-senac.jpg) no-repeat center center;
+}
+
+h1.logo-a a span{ display: none;}
+
+
+ul.menu{ list-style: none; padding: 0; margin: 0}
+
+ul.menu li{ margin: 0; }
+
+ul.menu.vertical li{ display: block; }
+ul.menu.horizontal li{ display: inline-block;}
+ul.menu.image li{ display: inline-block;}
+ul.menu.image li a{ background: none; padding: 0; transition: 0.5s all;font-size: 25px}
+ul.menu.image li a:hover{color:#FFFFFF !important; background: none;}
+
+
+
+
+
+/*ESTRUTURA RESPONSIVA*/
+@media screen and (max-width: 1000px) {
+	html, body{background: red;}
+	.container{width: 100%}
+}
+
+@media screen and (max-width: 600px) {
+  	html, body{background: orange;}
+	div#page{ width: 100%;}
+}
+
+@media screen and (max-width: 480px) {
+  	html, body{background: green;}
+	.fleft{float: none;}
+	.w40,.w60,.w30,.w70 ,.w70,.w50,.w33,.w25,.w20,.w100{ width: 100%;}
+	.row{padding: 15px;}
+	ul.menu.horizontal li{ display:block;}
+	ul.menu.horizontal li{padding:15px; }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
